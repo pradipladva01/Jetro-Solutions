@@ -1,0 +1,1197 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+:root {
+  --theme-color: #101010;
+  --theme-gradiant-color: linear-gradient(143.87deg, #C871FA 2.57%, #5463F0 101.7%);
+}
+
+.header-section {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
+  padding: 10px 0;
+}
+.header-section .main-menu-nav .main-menu {
+  text-decoration: none;
+}
+.header-section .main-menu-nav .main-menu li {
+  padding: 0 20px;
+}
+.header-section .main-menu-nav .main-menu li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--theme-color);
+  position: relative;
+}
+.header-section .main-menu-nav .main-menu li a.active::after {
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background-image: var(--theme-gradiant-color);
+  background-size: 100%;
+  opacity: 0.6;
+  transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 100%;
+}
+.header-section .main-menu-nav .main-menu li a.active {
+  font-weight: 800;
+  background-image: var(--theme-gradiant-color);
+  background-size: 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.header-section .main-menu-nav .main-menu li a:hover {
+  font-weight: 800;
+  background-image: var(--theme-gradiant-color);
+  background-size: 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.header-section .main-menu-nav .main-menu li a::after {
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background-image: var(--theme-gradiant-color);
+  background-size: 100%;
+  opacity: 0.6;
+  transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 0%;
+}
+.header-section .main-menu-nav .main-menu li a:hover::after {
+  width: 100%;
+}
+.header-section .input-container {
+  margin: 0 20px;
+  display: inline;
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+  -o-border-image: var(--theme-gradiant-color) 1;
+     border-image: var(--theme-gradiant-color) 1;
+  background: linear-gradient(143.87deg, rgba(200, 113, 250, 0.06) 2.57%, rgba(84, 99, 240, 0.06) 101.7%);
+}
+.header-section .input-container input {
+  border: 170px;
+  background-color: transparent;
+}
+.header-section .input-container input:focus {
+  outline: none;
+}
+.header-section .input-container button,
+.header-section .input-container i {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: linear-gradient(143.87deg, #C871FA 2.57%, #5463F0 101.7%);
+  color: white;
+}
+.header-section .input-container select {
+  border: none;
+}
+.header-section .social {
+  position: relative;
+}
+.header-section .social a {
+  text-decoration: none;
+}
+.header-section .social a .cart-count {
+  text-align: center;
+  background: linear-gradient(143.87deg, #C871FA 2.57%, #5463F0 101.7%);
+  color: white;
+  border: 2px solid white;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  line-height: 19px;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+}
+.header-section .social a img {
+  padding: 0 7px;
+}
+
+.banner-section {
+  background-image: url("../../img/banner.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  position: relative;
+}
+.banner-section .banner-img {
+  position: relative;
+  top: 85%;
+}
+.banner-section .banner-img img {
+  width: 85%;
+  margin-bottom: 20px;
+}
+.banner-section .banner-img h5 {
+  color: black;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.latest-products {
+  margin-top: 12%;
+  position: relative;
+}
+.latest-products h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+}
+.latest-products a {
+  display: inline-block;
+  font-weight: 800;
+  background-image: var(--theme-gradiant-color);
+  background-size: 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  padding: 15px 20px;
+  border: 1.5px solid #ccc;
+  -o-border-image: var(--theme-gradiant-color) 1;
+     border-image: var(--theme-gradiant-color) 1;
+}
+.latest-products a i {
+  margin-left: 10px;
+}
+.latest-products img {
+  width: 95%;
+}
+.latest-products .product-content {
+  position: absolute;
+  bottom: 2%;
+  padding: 0 25px;
+}
+.latest-products .product-content h5 {
+  color: white;
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.latest-products .product-content p {
+  color: white;
+  margin: 0;
+}
+
+.fake-jewalry {
+  margin-top: 7%;
+}
+.fake-jewalry h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+}
+.fake-jewalry .fake-jewalry-img img {
+  margin-bottom: 20px;
+}
+.fake-jewalry .fake-jewalry-img h5 {
+  color: black;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.Piercings-Jewalry {
+  margin-top: 7%;
+}
+.Piercings-Jewalry .Piercings-jewalry-slider-1 {
+  display: contents;
+}
+.Piercings-Jewalry h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+}
+.Piercings-Jewalry .fake-jewalry-img {
+  margin-bottom: 50px;
+}
+.Piercings-Jewalry .fake-jewalry-img img {
+  margin-bottom: 20px;
+}
+.Piercings-Jewalry .fake-jewalry-img h5 {
+  color: black;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.rings,
+.rings-2 {
+  margin-top: 4%;
+}
+.rings h2,
+.rings-2 h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+}
+.rings .swiper-container,
+.rings-2 .swiper-container {
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 7%;
+}
+.rings .swiper-container .swiper-slide,
+.rings-2 .swiper-container .swiper-slide {
+  height: 100%;
+  display: flex;
+  background: #eee;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms linear;
+  transform: scale(0.95);
+}
+.rings .swiper-container .swiper-slide.swiper-slide-active,
+.rings-2 .swiper-container .swiper-slide.swiper-slide-active {
+  transform: scale(1);
+}
+.rings .swiper-container .swiper-slide .rings-content-img,
+.rings-2 .swiper-container .swiper-slide .rings-content-img {
+  position: relative;
+  width: 100%;
+}
+.rings .swiper-container .swiper-slide .rings-content-img img,
+.rings-2 .swiper-container .swiper-slide .rings-content-img img {
+  width: 100%;
+}
+.rings .swiper-container .swiper-slide .rings-content-img .rings-content,
+.rings-2 .swiper-container .swiper-slide .rings-content-img .rings-content {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  display: flex;
+  padding: 0 30px;
+  line-height: 100px;
+}
+.rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100px;
+  margin-bottom: 0;
+}
+.rings .swiper-container .swiper-slide .rings-content-img p,
+.rings-2 .swiper-container .swiper-slide .rings-content-img p {
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0;
+  text-align: end;
+}
+.rings .rings-img,
+.rings-2 .rings-img {
+  position: relative;
+  margin-bottom: 40px;
+}
+.rings .rings-img img,
+.rings-2 .rings-img img {
+  width: 100%;
+  padding: 0 10px;
+}
+.rings .rings-img .rings-img-content,
+.rings-2 .rings-img .rings-img-content {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
+}
+.rings .rings-img .rings-img-content h3,
+.rings-2 .rings-img .rings-img-content h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.rings-2 .swiper-container {
+  margin-bottom: 0;
+}
+
+.offer {
+  margin-top: 7%;
+}
+.offer h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+.offer .offer-img {
+  position: relative;
+}
+.offer .offer-img img {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.offer .offer-img .offer-img-content {
+  position: absolute;
+  top: 47%;
+  text-align: center;
+  width: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  padding: 60px;
+}
+.offer .offer-img .offer-img-content p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 45px;
+  color: white;
+  margin-bottom: 0;
+}
+.offer .offer-img .offer-img-content h3 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+  color: white;
+  margin-bottom: 30px;
+}
+.offer .offer-img .offer-img-content a {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(143.87deg, #C871FA 2.57%, #5463F0 101.7%);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.offer .offer-img .offer-img-content-2 {
+  width: 89%;
+}
+
+.features {
+  background: linear-gradient(143.87deg, #C871FA 2.57%, #5463F0 101.7%);
+  margin-top: 7%;
+  padding: 50px 0;
+}
+.features .features-content .list-one {
+  list-style-image: url("../../img/Polygon 1.png");
+}
+.features .features-content h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+.features .features-content li {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+.features .features-content .app-btn {
+  margin-top: 20px;
+  display: inline-block;
+}
+.features .features-content .app-btn a {
+  margin: 0 10px;
+}
+
+.Newsletter {
+  margin-top: 5%;
+}
+.Newsletter .container {
+  border-bottom: 1px solid #e7e7e7;
+}
+.Newsletter h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+  margin-bottom: 20px;
+  color: var(--theme-color);
+}
+.Newsletter p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #A0A0A0;
+}
+.Newsletter .input-container {
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+  -o-border-image: var(--theme-gradiant-color) 1;
+     border-image: var(--theme-gradiant-color) 1;
+  background: linear-gradient(143.87deg, rgba(200, 113, 250, 0.06) 2.57%, rgba(84, 99, 240, 0.06) 101.7%);
+  margin-bottom: 40px;
+}
+.Newsletter .input-container img {
+  margin-left: 5px;
+}
+.Newsletter .input-container input {
+  border: 170px;
+  width: 74.8%;
+  background-color: transparent;
+  margin-left: 10px;
+}
+.Newsletter .input-container input:focus {
+  outline: none;
+}
+.Newsletter .input-container button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px 35px;
+  background: linear-gradient(143.87deg, #C871FA 2.57%, #5463F0 101.7%);
+  color: white;
+}
+.Newsletter .input-container select {
+  border: none;
+}
+
+.footer {
+  margin-top: 3%;
+}
+.footer .footer-first img {
+  margin-bottom: 10px;
+}
+.footer .footer-first p {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  color: #A0A0A0;
+}
+.footer .footer-first p a {
+  text-decoration: none;
+  background-image: var(--theme-gradiant-color);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: 700;
+}
+.footer .footer-first .social-icon a {
+  text-decoration: none;
+}
+.footer .footer-first .social-icon a img {
+  background: linear-gradient(143.87deg, rgba(200, 113, 250, 0.1) 2.57%, rgba(84, 99, 240, 0.1) 101.7%);
+  border: 1.5px solid #ccc;
+  -o-border-image: var(--theme-gradiant-color) 1;
+     border-image: var(--theme-gradiant-color) 1;
+  padding: 10px;
+  margin-right: 10px;
+}
+.footer .footer-second h2 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--theme-color);
+  margin-bottom: 25px;
+}
+.footer .footer-second ul {
+  padding: 0;
+}
+.footer .footer-second ul li {
+  list-style: none;
+}
+.footer .footer-second ul li a {
+  text-decoration: none;
+  color: #A0A0A0;
+  font-size: 14px;
+  line-height: 33px;
+  font-weight: 400;
+}
+
+@media (max-width: 1680px) {
+  .rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3,
+.rings .swiper-container .swiper-slide .rings-content-img p,
+.rings-2 .swiper-container .swiper-slide .rings-content-img p,
+.rings .rings-img .rings-img-content h3,
+.rings-2 .rings-img .rings-img-content h3,
+.offer .offer-img .offer-img-content h3,
+.features .features-content h2 {
+    font-size: 34px;
+  }
+  .fake-jewalry .fake-jewalry-img h5,
+.Piercings-Jewalry .fake-jewalry-img h5,
+.banner-section .banner-img h5 {
+    font-size: 22px;
+  }
+  .Newsletter .input-container input {
+    width: 74%;
+  }
+}
+@media (max-width: 1536px) {
+  .rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3,
+.rings .swiper-container .swiper-slide .rings-content-img p,
+.rings-2 .swiper-container .swiper-slide .rings-content-img p,
+.rings .rings-img .rings-img-content h3,
+.rings-2 .rings-img .rings-img-content h3,
+.offer .offer-img .offer-img-content h3,
+.features .features-content h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1440px) {
+  .latest-products {
+    margin-top: 16%;
+  }
+  .banner-section .banner-img img {
+    width: 80%;
+  }
+  .banner-section .banner-img {
+    top: 95%;
+  }
+}
+@media (max-width: 1366px) {
+  .Newsletter .input-container input {
+    width: 70%;
+  }
+  .banner-section .banner-img {
+    top: 115%;
+  }
+  .footer .footer-first p {
+    font-size: 16px;
+  }
+  .features .features-content li {
+    font-size: 16px;
+  }
+  .header-section .main-menu-nav .input-container input {
+    width: 67%;
+  }
+  .header-section .main-menu-nav .input-container {
+    width: 20%;
+  }
+  .header-section .main-menu-nav .social img {
+    padding: 0 6px;
+  }
+  .header-section .main-menu-nav .main-menu li {
+    padding: 0 10px;
+  }
+  .fake-jewalry .fake-jewalry-img h5,
+.Piercings-Jewalry .fake-jewalry-img h5,
+.banner-section .banner-img h5 {
+    font-size: 20px;
+  }
+  .latest-products .product-content h5 {
+    font-size: 16px;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3,
+.rings .swiper-container .swiper-slide .rings-content-img p,
+.rings-2 .swiper-container .swiper-slide .rings-content-img p,
+.rings .rings-img .rings-img-content h3,
+.rings-2 .rings-img .rings-img-content h3,
+.offer .offer-img .offer-img-content h3,
+.features .features-content h2 {
+    font-size: 26px;
+  }
+  .offer .offer-img .offer-img-content h3 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1280px) {
+  .header-section .main-menu-nav .main-menu li {
+    padding: 0 9px;
+  }
+}
+@media (max-width: 1024px) {
+  .header-section .main-menu-nav .input-container {
+    display: none;
+  }
+  .header-section .main-menu-nav .social img {
+    padding: 0 8px;
+  }
+  .banner-section {
+    height: 230px;
+  }
+  .banner-section .banner-img {
+    top: 90%;
+  }
+  .latest-products {
+    margin-top: 17%;
+  }
+  .fake-jewalry .fake-jewalry-img h5,
+.Piercings-Jewalry .fake-jewalry-img h5,
+.banner-section .banner-img h5 {
+    font-size: 16px;
+  }
+  .fake-jewalry .fake-jewalry-img img,
+.Piercings-Jewalry .fake-jewalry-img img {
+    width: 100%;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3,
+.rings .swiper-container .swiper-slide .rings-content-img p,
+.rings-2 .swiper-container .swiper-slide .rings-content-img p,
+.rings .rings-img .rings-img-content h3,
+.rings-2 .rings-img .rings-img-content h3,
+.offer .offer-img .offer-img-content h3,
+.features .features-content h2 {
+    font-size: 20px;
+  }
+  .offer .offer-img .offer-img-content {
+    padding: 20px;
+  }
+  .features .features-img img {
+    width: 100%;
+  }
+  .features .features-content h2 {
+    font-size: 26px;
+  }
+  .Newsletter .input-container input {
+    width: 64%;
+  }
+  .offer .offer-img .offer-img-content h3 {
+    margin-bottom: 12px;
+  }
+  .fake-jewalry h2,
+.latest-products h2,
+.Piercings-Jewalry h2,
+.rings h2,
+.rings-2 h2,
+.offer h2,
+.Newsletter h2 {
+    font-size: 30px;
+  }
+  .latest-products .product-content {
+    padding: 0 15px;
+  }
+  .latest-products .product-content h5,
+.latest-products .product-content p {
+    font-size: 14px;
+  }
+  .offer .offer-img .offer-img-content a {
+    padding: 8px 15px;
+  }
+  .footer .footer-first p {
+    font-size: 14px;
+  }
+  .footer .footer-second ul li a {
+    line-height: 30px;
+  }
+}
+@media (max-width: 840px) {
+  .banner-section {
+    height: 150px;
+  }
+  .latest-products {
+    margin-top: 17%;
+  }
+  .swiper-responsive {
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 20%;
+  }
+  .swiper-responsive .swiper-slide {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms linear;
+    transform: scale(0.9);
+  }
+  .swiper-responsive .swiper-slide.swiper-slide-active {
+    transform: scale(1);
+  }
+  .banner-section .banner-img img {
+    width: 90%;
+  }
+  .fake-jewalry h2,
+.latest-products h2,
+.Piercings-Jewalry h2,
+.rings h2,
+.rings-2 h2,
+.offer h2,
+.Newsletter h2 {
+    font-size: 26px;
+  }
+  .latest-products a {
+    padding: 10px 15px;
+  }
+  .latest-products .product-content h5,
+.latest-products .product-content p {
+    font-size: 10px;
+  }
+  .latest-products .product-content h5 {
+    margin-bottom: 0px;
+  }
+  .latest-products-row,
+.fake-jewalry-row,
+.Piercings-jewalry-row,
+.rings-row,
+.rings-2-row,
+.offer-row,
+.Newsletter-row,
+.footer-row {
+    margin-bottom: 30px !important;
+  }
+  .swiper-responsive-2 {
+    margin-bottom: 0;
+  }
+  .Piercings-Jewalry .fake-jewalry-img {
+    margin-bottom: 0;
+  }
+  .fake-jewalry .fake-jewalry-img h5,
+.Piercings-Jewalry .fake-jewalry-img h5,
+.banner-section .banner-img h5 {
+    font-size: 14px;
+  }
+  .fake-jewalry,
+.Piercings-Jewalry,
+.rings,
+.rings-2,
+.offer,
+.Newsletter {
+    margin-top: 5%;
+  }
+  .Newsletter .input-container input {
+    width: 57%;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3,
+.rings .swiper-container .swiper-slide .rings-content-img p,
+.rings-2 .swiper-container .swiper-slide .rings-content-img p,
+.rings .rings-img .rings-img-content h3,
+.rings-2 .rings-img .rings-img-content h3,
+.offer .offer-img .offer-img-content h3,
+.features .features-content h2 {
+    font-size: 16px;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3 {
+    line-height: 60px;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img p,
+.rings-2 .swiper-container .swiper-slide .rings-content-img p {
+    line-height: 60px;
+  }
+  .rings .rings-img img,
+.rings-2 .rings-img img {
+    padding: 0;
+  }
+  .rings .rings-img .rings-img-content h3,
+.rings-2 .rings-img .rings-img-content h3 {
+    line-height: 30px;
+  }
+  .Piercings-Jewalry .Piercings-jewalry-slider-1 {
+    display: none;
+  }
+  .offer .offer-img .offer-img-content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .offer .offer-img .offer-img-content h3 {
+    margin-bottom: 0px;
+  }
+  .offer .offer-img .offer-img-content {
+    top: 45%;
+  }
+  .features .features-img img {
+    width: 30%;
+    margin-top: 30px;
+  }
+  .features .features-content .app-btn {
+    justify-content: center;
+    display: flex;
+  }
+  .features .features-content h2 {
+    font-size: 24px;
+  }
+  .Newsletter-row {
+    margin-bottom: 15px !important;
+  }
+  .footer .footer-three h2 {
+    margin-top: 20px;
+  }
+  .rings .rings-img,
+.rings-2 .rings-img {
+    margin-bottom: 0;
+  }
+  #wrapper {
+    display: block;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 1%;
+    right: 6%;
+    text-align: end;
+  }
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+  #sidebar-wrapper {
+    z-index: 11;
+    position: fixed;
+    right: 0px;
+    width: 0px;
+    height: 100%;
+    overflow-y: auto;
+    list-style: none;
+    background: white;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    top: 0px;
+  }
+  #sidebar-wrapper .close-btn {
+    font-size: 30px;
+    position: relative;
+    top: 0%;
+    color: black;
+    z-index: 999;
+  }
+  #sidebar-wrapper img {
+    position: relative;
+    top: 3%;
+    padding: 0 16px;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 40%;
+    visibility: visible;
+    box-shadow: -100px 0 0 700px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+  }
+  #page-content-wrapper img {
+    width: 30px;
+  }
+  #page-content-wrapper .btn:focus,
+#sidebar-wrapper .close-btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+  #menu-main-menu {
+    background: #fff;
+    height: 100vh;
+    overflow: scroll;
+    padding: 100px 15px 15px 15px;
+    position: fixed;
+    top: 0;
+    text-align: left;
+    transition: right 500ms ease;
+    width: 300px;
+    z-index: 2;
+  }
+  #menu-main-menu > li {
+    display: block;
+  }
+  #menu-main-menu > li:not(.menu-item-button) {
+    border-bottom: 2px solid #e9e6e3;
+    position: relative;
+  }
+  #menu-main-menu > li:not(.menu-item-button) > a {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper.toggled #sidebar-wrapper {
+    width: 45%;
+  }
+}
+@media (max-width: 428px) {
+  #wrapper.toggled #sidebar-wrapper {
+    width: 80%;
+  }
+  .fake-jewalry h2,
+.latest-products h2,
+.Piercings-Jewalry h2,
+.rings h2,
+.rings-2 h2,
+.offer h2,
+.Newsletter h2 {
+    font-size: 24px;
+  }
+  .latest-products {
+    margin-top: 30%;
+  }
+  .banner-section .banner-img img {
+    width: 80%;
+  }
+  .banner-section {
+    height: 100px;
+  }
+  .latest-products img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .latest-products .product-content-1,
+.latest-products .product-content-2 {
+    bottom: 47%;
+  }
+  .latest-products .product-content-3,
+.latest-products .product-content-4 {
+    bottom: 5%;
+  }
+  .latest-products .product-content h5,
+.latest-products .product-content p {
+    font-size: 13px;
+  }
+  .fake-jewalry .fake-jewalry-img img,
+.Piercings-Jewalry .fake-jewalry-img img {
+    width: 80%;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3,
+.rings .swiper-container .swiper-slide .rings-content-img p,
+.rings-2 .swiper-container .swiper-slide .rings-content-img p,
+.rings .rings-img .rings-img-content h3,
+.rings-2 .rings-img .rings-img-content h3,
+.offer .offer-img .offer-img-content h3,
+.features .features-content h2 {
+    font-size: 16px;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img .rings-content,
+.rings-2 .swiper-container .swiper-slide .rings-content-img .rings-content {
+    padding: 0 10px;
+  }
+  .rings .rings-img img,
+.rings-2 .rings-img img {
+    margin-bottom: 20px;
+  }
+  .rings .rings-img .rings-img-content h3,
+.rings-2 .rings-img .rings-img-content h3 {
+    line-height: 60px;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3 {
+    line-height: 20px;
+  }
+  .offer .offer-img .offer-img-content {
+    padding: 50px;
+  }
+  .offer .offer-img .offer-img-content h3 {
+    line-height: 40px;
+  }
+  .offer .offer-img .offer-img-content a {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .offer .offer-img .offer-img-content p {
+    line-height: 10px;
+  }
+  .offer .offer-img .offer-img-content-2 {
+    width: 75%;
+  }
+  .offer .offer-img img {
+    height: 275px;
+  }
+  .features .features-content .app-btn img {
+    width: 80%;
+  }
+  .features .features-content .app-btn a {
+    text-align: center;
+    margin: 0;
+  }
+  .features .features-content h2 {
+    font-size: 24px;
+  }
+  .Newsletter .input-container input {
+    width: 57%;
+  }
+  .Newsletter .input-container button {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+  .footer .footer-second h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .features .features-img img {
+    width: 50%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .features-img {
+    order: -1;
+  }
+  .fake-jewalry,
+.Piercings-Jewalry,
+.rings,
+.rings-2,
+.offer,
+.Newsletter {
+    margin-top: 3%;
+  }
+  .fake-jewalry .fake-jewalry-img h5,
+.Piercings-Jewalry .fake-jewalry-img h5,
+.banner-section .banner-img h5 {
+    line-height: 0;
+  }
+  .fake-jewalry,
+.Piercings-Jewalry,
+.rings,
+.rings-2,
+.offer,
+.Newsletter {
+    margin-top: 5%;
+  }
+  .banner-section .banner-img h5 {
+    line-height: 30px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 390px) {
+  #wrapper.toggled #sidebar-wrapper {
+    width: 85%;
+  }
+  .fake-jewalry h2,
+.latest-products h2,
+.Piercings-Jewalry h2,
+.rings h2,
+.rings-2 h2,
+.offer h2,
+.Newsletter h2 {
+    font-size: 20px;
+  }
+  .latest-products a {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+  .latest-products .product-content {
+    padding: 0 7px;
+  }
+  .fake-jewalry,
+.Piercings-Jewalry,
+.rings,
+.rings-2,
+.offer,
+.Newsletter {
+    margin-top: 2%;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3 {
+    line-height: 20px;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3,
+.rings .swiper-container .swiper-slide .rings-content-img p,
+.rings-2 .swiper-container .swiper-slide .rings-content-img p,
+.rings .rings-img .rings-img-content h3,
+.rings-2 .rings-img .rings-img-content h3,
+.offer .offer-img .offer-img-content h3,
+.features .features-content h2 {
+    font-size: 10px;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img .rings-content,
+.rings-2 .swiper-container .swiper-slide .rings-content-img .rings-content {
+    bottom: -15px;
+  }
+  .features .features-content h2 {
+    font-size: 24px;
+  }
+  .Newsletter .input-container input {
+    width: 54%;
+  }
+}
+@media (max-width: 360px) {
+  #wrapper.toggled #sidebar-wrapper {
+    width: 90%;
+  }
+  .offer .offer-img .offer-img-content p {
+    font-size: 14px;
+  }
+  .Newsletter .input-container input {
+    width: 49%;
+  }
+  .latest-products .product-content h5,
+.latest-products .product-content p {
+    font-size: 10px;
+  }
+  .banner-section .banner-img img {
+    margin-bottom: 0;
+  }
+  .banner-section .banner-img h5 {
+    margin-bottom: 0;
+  }
+  .swiper-responsive {
+    height: 175%;
+    margin-bottom: 0%;
+  }
+  .fake-jewalry-slider-2 .swiper-responsive,
+.Piercings-jewalry-slider-2 .swiper-responsive {
+    height: 100%;
+  }
+}
+@media (max-width: 320px) {
+  #sidebar-wrapper .close-btn {
+    top: -10px;
+    left: -10px;
+  }
+  .offer .offer-img .offer-img-content p {
+    font-size: 11px;
+  }
+  .rings .swiper-container .swiper-slide .rings-content-img h3,
+.rings-2 .swiper-container .swiper-slide .rings-content-img h3,
+.rings .swiper-container .swiper-slide .rings-content-img p,
+.rings-2 .swiper-container .swiper-slide .rings-content-img p,
+.rings .rings-img .rings-img-content h3,
+.rings-2 .rings-img .rings-img-content h3,
+.offer .offer-img .offer-img-content h3,
+.features .features-content h2 {
+    font-size: 9px;
+  }
+  .features .features-content h2 {
+    font-size: 20px;
+  }
+  .features .features-content li {
+    font-size: 14px;
+  }
+  .Newsletter .input-container input {
+    width: 41%;
+  }
+  .latest-products-row,
+.fake-jewalry-row,
+.Piercings-jewalry-row,
+.rings-row,
+.rings-2-row,
+.offer-row,
+.Newsletter-row,
+.footer-row {
+    margin-bottom: 10px !important;
+  }
+  .fake-jewalry h2,
+.latest-products h2,
+.Piercings-Jewalry h2,
+.rings h2,
+.rings-2 h2,
+.offer h2,
+.Newsletter h2 {
+    font-size: 16px;
+  }
+  .latest-products a {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
